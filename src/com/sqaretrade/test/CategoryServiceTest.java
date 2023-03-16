@@ -5,10 +5,14 @@ import java.util.Set;
 import com.sqaretrade.categories.model.CategoryNode;
 import com.sqaretrade.categories.CategorySearchHelper;
 
+/**
+ * Test class
+ */
 public class CategoryServiceTest {
 
 
     public static void main(String[] args) {
+        // test only show messages if there is a failure
         getKeywordsByCategoryTest();
         getKeywordsByCategoryNoKeywordsTest();
         getLevelByCategoryTest();
@@ -16,6 +20,7 @@ public class CategoryServiceTest {
     }
 
     public static void getKeywordsByCategoryTest(){
+        // this uses the fixed category created by the helper
         CategoryNode root = CategorySearchHelper.createCategories();
 
         Set<String> kitchenKeywords = CategorySearchHelper.getKeyWordsByCategory(root, "Kitchen");
@@ -25,6 +30,7 @@ public class CategoryServiceTest {
     }
 
     public static void getKeywordsByCategoryNoKeywordsTest(){
+        // this uses the fixed category created by the helper
         CategoryNode root = CategorySearchHelper.createCategories();
 
         Set<String> kitchenKeywords = CategorySearchHelper.getKeyWordsByCategory(root, "Appliances");
@@ -33,6 +39,7 @@ public class CategoryServiceTest {
     }
 
     public static void getLevelByCategoryTest(){
+        // this uses the fixed category created by the helper
         CategoryNode root = CategorySearchHelper.createCategories();
 
         int level = CategorySearchHelper.getLevelByCategory(root, "Kitchen");
@@ -41,6 +48,7 @@ public class CategoryServiceTest {
     }
 
     public static void getLevelByCategoryNotFoundTest(){
+        // this uses the fixed category created by the helper
         CategoryNode root = CategorySearchHelper.createCategories();
 
         int level = CategorySearchHelper.getLevelByCategory(root, "Kitchen1");

@@ -24,6 +24,18 @@ public class CategorySearchHelper {
      */
     public static CategoryNode createCategories(){
 
+        /**
+         *
+         * Tree representation for testing
+         *                                   Home Appliances
+         *
+         *            Mayor Appliances             Minor Appliances      Lawn Garden
+         *
+         *    Kitchen            Appliances
+         *
+         *
+         */
+
         Set<String> keywords = new HashSet<>();
         keywords.add("Home Appliances");
         CategoryNode  home = new CategoryNode("Home Appliances", keywords);
