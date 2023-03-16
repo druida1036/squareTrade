@@ -5,7 +5,10 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-
+/**
+ * Model class that represent a Category Node
+ * Each node can have o or many nodes
+ */
 public class CategoryNode {
     private String name;
     private Set<String> keywords = new HashSet<>();

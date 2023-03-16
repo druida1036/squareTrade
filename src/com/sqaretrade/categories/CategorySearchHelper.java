@@ -10,6 +10,9 @@ import java.util.Set;
 import com.sqaretrade.categories.model.CategoryNode;
 import com.sqaretrade.categories.model.CategoryResponse;
 
+/**
+ * Main Component that support the operation to Create and search in the category tree
+ */
 public class CategorySearchHelper {
 
 
